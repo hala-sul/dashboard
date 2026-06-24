@@ -6,7 +6,9 @@ import "./index.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/dashboard">
+
+   
       <Routes>
         <Route path="/" element={<LoginPage />} />
         <Route path="/verification" element={<VerificationPage />} />
