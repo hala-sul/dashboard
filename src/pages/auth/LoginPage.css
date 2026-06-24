@@ -1,0 +1,207 @@
+
+.login-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl;
+  }
+  
+ 
+  .login-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease;
+  }
+  
+  .login-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* رأس الكرت */
+  .login-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .logo {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-header h1 {
+    color: #1f2937;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+  
+  .login-header p {
+    color: #6b7280;
+    font-size: 0.9rem;
+  }
+  
+  .input-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-group label {
+    display: block;
+    color: #374151;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s;
+    font-family: inherit;
+    direction: rtl;
+  }
+  
+  .input-group input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  }
+  
+  .input-group input::placeholder {
+    color: #9ca3af;
+  }
+  
+  /* زر تسجيل الدخول */
+  .login-btn {
+    width: 100%;
+    padding: 0.875rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .login-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  /* رسالة الخطأ */
+  .error-message {
+    background-color: #fee2e2;
+    border: 1px solid #ef4444;
+    color: #dc2626;
+    padding: 0.75rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  /* رابط نسيت كلمة المرور */
+  .forgot-link {
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+  
+  .forgot-link a {
+    color: #667eea;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  
+  .forgot-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* رابط إنشاء حساب */
+  .signup-link {
+    text-align: center;
+    margin-top: 2rem;
+    color: #6b7280;
+    font-size: 0.9rem;
+  }
+  
+  .signup-link a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  .main-content {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* سبينر التحميل */
+  .spinner {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 0.6s linear infinite;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* تنسيق للشاشات الصغيرة */
+  @media (max-width: 480px) {
+    .login-card {
+      padding: 1.5rem;
+    }
+  
+    .login-header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .logo {
+      width: 55px;
+      height: 55px;
+      font-size: 1.5rem;
+    }
+  }

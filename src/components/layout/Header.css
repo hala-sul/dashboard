@@ -1,0 +1,153 @@
+Header.css
+
+.header {
+  background: #ffffff;
+  padding: 16px 32px;
+  border-bottom: 1px solid #e8ecf1;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 72px;
+}
+
+.header-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a2332;
+  margin: 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+  background: #f5f7fa;
+  border-radius: 10px;
+  padding: 8px 14px;
+  gap: 8px;
+  border: 1px solid #e8ecf1;
+  transition: all 0.3s ease;
+}
+
+.header-search:focus-within {
+  background: #ffffff;
+  border-color: #4f6af5;
+  box-shadow: 0 0 0 4px rgba(79, 106, 245, 0.08);
+}
+
+.header-search input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  color: #1a2332;
+  width: 160px;
+}
+
+.header-search input::placeholder {
+  color: #9aa6b9;
+}
+
+.search-icon {
+  color: #9aa6b9;
+}
+
+.header-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: #f5f7fa;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7a8f;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.header-btn:hover {
+  background: #e8ecf1;
+  color: #1a2332;
+}
+
+.header-btn .notification-dot {
+  width: 8px;
+  height: 8px;
+  background: #ef4444;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: 2px solid #ffffff;
+}
+
+.header-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 4px 12px 4px 4px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.header-user:hover {
+  background: #f5f7fa;
+}
+
+.header-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #f0f4ff;
+  color: #4f6af5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .header {
+    padding: 12px 16px;
+    min-height: 64px;
+  }
+
+  .header-title {
+    font-size: 17px;
+  }
+
+  .header-search input {
+    width: 100px;
+  }
+
+  .header-search {
+    padding: 6px 12px;
+  }
+
+  .header-btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .header-user .user-name {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-search {
+    display: none;
+  }
+}

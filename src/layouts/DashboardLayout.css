@@ -1,0 +1,61 @@
+/* DashboardLayout.css */
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f7fa;
+}
+
+/* ===== MAIN WRAPPER ===== */
+.main-wrapper {
+  flex: 1;
+  margin-right: 260px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===== HEADER ===== */
+.main-wrapper .header {
+  background: #ffffff;
+  padding: 16px 32px;
+  border-bottom: 1px solid #e8ecf1;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* ===== PAGE CONTENT ===== */
+.page-content {
+  flex: 1;
+  padding: 24px 32px;
+  background: #f5f7fa;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .main-wrapper {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-wrapper .header {
+    padding: 12px 16px;
+    min-height: 64px;
+  }
+
+  .page-content {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-content {
+    padding: 12px;
+  }
+}
